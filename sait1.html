@@ -1,0 +1,32 @@
+<html>
+<head>
+ <script type="text/javascript">
+	function show_pic(){
+		var c1_elem = document.getElementById("c1");
+		var c2_elem = document.getElementById("c2");
+		c1_elem.style.display='none';
+		c2_elem.style.display='block';
+		}
+	function show_text(){
+		var c1_elem = document.getElementById("c1");
+		var c2_elem = document.getElementById("c2");
+		c1_elem.style.display='block';
+		c2_elem.style.display='none';
+		}
+ </script>
+</head>
+<body>
+ <table border="2">
+  <tr style="color:red">
+   <td width="50%" onclick="show_text()">Info</td>
+   <td widht="50%" onclick="show_pic()">Map</td>
+  </tr>
+  <tr>
+   <td colspan="2">
+    <div id="c1">Seeland welcomes you!</div>
+    <div id="c2" style="display:none"><img src="map.png"></div>
+   </td>
+  </tr>
+ </table>
+</body>
+</html>
