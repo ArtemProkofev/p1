@@ -51,6 +51,7 @@
             rr3elem = document.getElementById("rr3");
             rr4elem = document.getElementById("rr4");
             t1elem = document.getElementById("t1");
+	    o1elem = document.getElementById("o1");
             if (q1elem.checked == false) result = result + 1;
 	    if (q2elem.checked == false) result = result + 1;
 	    if (q3elem.checked == true) result = result + 1;
@@ -59,5 +60,5 @@
             if (q6elem.checked == true) result = result + 1;
             if (rr1elem.checked == true) result = result + 1;
             if (t1elem.value == 'Sealand') result = result + 1; 
-            alert(result);
+            alert("Количество правильных ответов: "+result+".");
         }
